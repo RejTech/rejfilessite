@@ -22,6 +22,11 @@
         /* 应用动画到.card类 */
         .card {
             animation: fadeInUp 0.5s ease-out;
+            border-radius: 20px;
+        }
+        .btn {
+            animation: fadeInUp 0.5s ease-out;
+            border-radius: 10px;
         }
 
         /* 增大卡片图像的圆角 */
@@ -60,67 +65,74 @@
     </div>
 </div>
 <div class="container">
+    <!-- 第一行：三列 -->
     <div class="row">
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/PCL2.jpg">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="PCL2" class="card-img-top" src="images/PCL2.jpg">
                 <div class="card-body">
                     <h5 class="card-title">PCL2-锐机版安装包</h5>
-                    <p class="card-text">锐机对PCL2原来的安装方式进行了改进，变成了一个简单的安装程序<br>旧版半离线：<br>►需要手动运行自带的Java安装包<br>►自行下载游戏版本<br>新版全离线：<br>►内置的可直接运行的Java<br>►自带的1.21.10游戏版本
-                    </p>
-                    <a class="btn btn-primary" href="#" onclick="toggleIframe()">了解更多-新版全离线</a>
-                    <a class="btn btn-primary" href="autoredirect.html?link=pcl2">Onedrive下载-旧版半离线</a>
+                    <p class="card-text">锐机对PCL2原来的安装方式进行了改进，变成了一个简单的安装程序<br>旧版半离线：<br>►需要手动运行自带的Java安装包<br>►自行下载游戏版本<br>新版全离线：<br>►内置的可直接运行的Java<br>►自带的1.21.10游戏版本</p>
+                    <div>
+                        <a class="btn btn-primary" href="#" onclick="toggleIframe()">了解更多-新版全离线</a>
+                        <br><br>
+                        <a class="btn btn-primary" href="autoredirect.html?link=pcl2">Onedrive下载-旧版半离线</a>
+                    </div>
                     <!-- 隐藏的iframe -->
                     <iframe id="ad-iframe" src="images/ad-redirect-newpcl.html"></iframe>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/CPP.jpg">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="C++教程" class="card-img-top" src="images/CPP.jpg">
                 <div class="card-body">
                     <h5 class="card-title">锐机整理的C++教程</h5>
                     <p class="card-text">当前资源不可用</p>
-                <button type="button" class="btn btn-primary" disabled href="autoredirect.html?link=cpp">奶牛快传下载</button>
+                    <button type="button" class="btn btn-primary" disabled href="autoredirect.html?link=cpp">奶牛快传下载</button>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/box.jpg">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="虚拟机礼盒" class="card-img-top" src="images/box.jpg">
                 <div class="card-body">
                     <h5 class="card-title">锐机的虚拟机礼盒</h5>
-                    <p class="card-text">锐机整理了安装Windows10虚拟机所需要的文件：<br>►Windows10LTSC2019-ISO镜像<br>►VMWare12.2、15.5安装包、激活码<br>►MicrosoftStore修复工具（锐机版、原版、视频使用教程）
-                    </p>
-                    <a class="btn btn-primary" href="autoredirect.html?link=tour">在线视频教程</a>
-                <a href="autoredirect.html?link=vm" class="btn btn-primary">123网盘下载所有文件</a>
+                    <p class="card-text">锐机整理了安装Windows10虚拟机所需要的文件：<br>►Windows10LTSC2019-ISO镜像<br>►VMWare12.2、15.5安装包、激活码<br>►MicrosoftStore修复工具（锐机版、原版、视频使用教程）</p>
+                    <div>
+                        <a class="btn btn-primary" href="autoredirect.html?link=tour">在线视频教程</a>
+                        <br><br>
+                        <a href="autoredirect.html?link=vm" class="btn btn-primary">123网盘下载所有文件</a>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
     </div>
+
+    <!-- 第二行：三列 -->
     <div class="row">
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/ball.jpg">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="声控球" class="card-img-top" src="images/ball.jpg">
                 <div class="card-body">
                     <h5 class="card-title">锐机声控球</h5>
                     <p class="card-text">锐机声控球会根据麦克风音量大小进行跳动，适合用在自习课等场景</p>
                     <a class="btn btn-primary" href="autoredirect.html?link=ball">微软云盘下载</a>
-            </div>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/card-img.png">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="敬请期待" class="card-img-top" src="images/card-img.png">
                 <div class="card-body">
                     <h5 class="card-title">敬请期待</h5>
                     <p class="card-text">敬请期待</p>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 100%;">
-                <img alt="..." class="card-img-top" src="images/card-img.png">
+        <div class="col-md-4">
+            <div class="card">
+                <img alt="敬请期待" class="card-img-top" src="images/card-img.png">
                 <div class="card-body">
                     <h5 class="card-title">敬请期待</h5>
                     <p class="card-text">敬请期待</p>
@@ -129,6 +141,7 @@
         </div>
     </div>
 </div>
+
 <!-- 其他内容保持不变 -->
 <script>
     function toggleIframe() {
