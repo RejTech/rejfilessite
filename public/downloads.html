@@ -18,6 +18,16 @@
                 transform: translateY(0) scale(1);
             }
         }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.8); /* 增大偏移量和缩放比例 */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
 
         /* 应用动画到.card类 */
         .card {
@@ -42,6 +52,7 @@
             height: 300px; /* 根据需要调整高度 */
             border: none;
             border-radius: 10px;
+            animation: fadeInDown 0.5s ease-out;
         }
     </style>
 </head>
@@ -76,8 +87,8 @@
                     <h5 class="card-title">PCL2-锐机版安装包</h5>
                     <p class="card-text">锐机对PCL2原来的安装方式进行了改进，变成了一个简单的安装程序<br>旧版半离线：<br>►需要手动运行自带的Java安装包<br>►自行下载游戏版本<br>新版全离线：<br>►内置的可直接运行的Java<br>►自带的1.21.10游戏版本</p>
                     <div>
-                        <a class="btn btn-primary" href="#" onclick="toggleIframe()">了解更多-新版全离线</a>
-                        <iframe id="ad-iframe" src="images/ad-redirect-newpcl.html"></iframe>
+                        <a class="btn btn-primary" href="#ad-iframe" onclick="toggleIframe()">了解更多-新版全离线</a>
+                        <iframe id="ad-iframe" src="images/ad-redirect-newpcl.html" id="ad-iframe"></iframe>
                         <br><br>
                         <a class="btn btn-primary" href="autoredirect.html?link=pcl2">Onedrive下载-旧版半离线</a>
                     </div>
