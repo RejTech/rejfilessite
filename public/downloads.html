@@ -25,10 +25,11 @@
             border-radius: 20px;
         }
         .btn {
-            animation: fadeInUp 0.5s ease-out;
             border-radius: 10px;
         }
-
+        .navbar-toggler {
+            border-radius: 10px;
+        }
         /* 增大卡片图像的圆角 */
         .card .card-img-top {
             border-radius: 20px; /* 你可以根据需要调整这个值 */
@@ -40,6 +41,7 @@
             width: 100%;
             height: 300px; /* 根据需要调整高度 */
             border: none;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -75,11 +77,10 @@
                     <p class="card-text">锐机对PCL2原来的安装方式进行了改进，变成了一个简单的安装程序<br>旧版半离线：<br>►需要手动运行自带的Java安装包<br>►自行下载游戏版本<br>新版全离线：<br>►内置的可直接运行的Java<br>►自带的1.21.10游戏版本</p>
                     <div>
                         <a class="btn btn-primary" href="#" onclick="toggleIframe()">了解更多-新版全离线</a>
+                        <iframe id="ad-iframe" src="images/ad-redirect-newpcl.html"></iframe>
                         <br><br>
                         <a class="btn btn-primary" href="autoredirect.html?link=pcl2">Onedrive下载-旧版半离线</a>
                     </div>
-                    <!-- 隐藏的iframe -->
-                    <iframe id="ad-iframe" src="images/ad-redirect-newpcl.html"></iframe>
                 </div>
             </div>
         </div>
@@ -156,4 +157,7 @@
 </body>
 <a href="LicenseView.html">Apache2.0许可证</a>
 <a><br>版权所有© 2025锐机科技</a>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
 </html>
