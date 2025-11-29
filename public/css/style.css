@@ -56,6 +56,24 @@ p {
     General               
 -----------------------------------------*/
 
+/* 添加动画的关键帧 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8); /* 增大偏移量和缩放比例 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 应用动画到.card类 */
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease-out;
+}
 html{
   -webkit-font-smoothing: antialiased;
 }
@@ -154,7 +172,6 @@ a:hover, a:active, a:focus {
   top: 5px;
   left: 5px; 
 }
-
 @-webkit-keyframes sk-innerCircle {
   0% {
     -webkit-transform: rotate(0);
